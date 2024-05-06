@@ -1,0 +1,38 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+    int n;
+    cout << "enter a number" << endl;
+    cin >> n;
+    bool isprime = 1;
+
+    for (int i = 2; i < n; i++)
+    {
+        if (n % i == 0)
+//         {
+//             cout << "not a prime number" << endl;
+//             break;
+//         }
+
+//         else
+//         {
+//             cout << "a prime number" << endl;
+//             break;
+//         }
+//     }
+// }
+        {
+            isprime = 0;
+            break;
+        }
+    }
+    if (isprime == 0)
+    {
+        cout << "not prime number" << endl;
+    }
+    else
+    {
+        cout << "prime number" << endl;
+    }
+}
