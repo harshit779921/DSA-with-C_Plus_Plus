@@ -1,21 +1,18 @@
 #include <bits/stdc++.h>
 using namespace std;
-void Ntime(int i, int n)
+void Natural(int i, int n)
 {
     if (i > n)
     {
         return;
     }
-    cout << "Harshit" << endl;
-    Ntime(i + 1, n);
+    cout<<i<<" ";
+    Natural(i + 1, n);   
 }
 int main()
 {
     int n;
     cin >> n;
-    Ntime(1, n);
+    Natural(1, n);
     // return 0;
 }
-
-
-// Time Complexity = O(N)
