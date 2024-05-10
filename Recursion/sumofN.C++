@@ -7,7 +7,7 @@ using namespace std;
 //     if (i < 1)
 //     {
 //         cout << endl
-//              << "The sum of N natural number : 4" << sum;
+//              << "The sum of N natural number : " << sum;
 //         return;
 //     }
 //     cout << i << " ";
