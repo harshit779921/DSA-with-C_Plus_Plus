@@ -6,8 +6,8 @@ void Natural(int i, int n)
     {
         return;
     }
-    cout<<i<<" ";
-    Natural(i - 1, n);   
+    cout << i << " ";
+    Natural(i - 1, n);
 }
 int main()
 {
