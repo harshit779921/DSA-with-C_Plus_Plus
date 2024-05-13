@@ -28,3 +28,8 @@ int main()
     }
     return 0;
 }
+
+// above code is for lower case if you want to do with upper case just
+// change 'a' to 'A'(in the same formula) and if you want to do with both upper and lower case 
+// remove hash[s[i]-'a'] to hash[s[i]] and also change int hash[26] to int hash[256]
+//  As ASCII AS 256 CHARACTER IN IT
