@@ -15,7 +15,7 @@ int main()
 
     // precompute
 
-    int hash[13] = {0};
+    int hash[13] = {0};   // array in main upto 10^6 and globally it is 10^7
     for (int i = 0; i < n; i++)
     {
         hash[arr[i]] += 1;
