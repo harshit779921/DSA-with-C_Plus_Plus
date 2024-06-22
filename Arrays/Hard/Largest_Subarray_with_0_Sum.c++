@@ -34,7 +34,6 @@ using namespace std;
 
 int maxLen(int A[], int n)
 {
-    // Your code here
     unordered_map<int, int> mpp;
     int maxi = 0;
     int sum = 0;
@@ -59,4 +58,12 @@ int maxLen(int A[], int n)
     }
 
     return maxi;
+}
+
+int main()
+{
+    int A[] = {15, -2, 2, -8, 1, 7, 10, 23};
+    int n = sizeof(A) / sizeof(A[0]);
+    cout << "Length of the longest subarray with 0 sum is " << maxLen(A, n) << endl;
+    return 0;
 }
