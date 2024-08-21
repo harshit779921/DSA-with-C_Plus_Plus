@@ -15,7 +15,7 @@ using namespace std;
 //     cout << fact(n);
 //     return 0;
 // }
-
+ 
 void fact(int i, int facto)
 {
     if (i < 1)
