@@ -3,7 +3,8 @@ using namespace std;
 
 // Brute Force
 
-// void solve(int arr[], int n) {
+// void solve(int arr[], int n) 
+// {
 //   int temp[n];
 //   for (int i = 1; i < n; i++) {
 //     temp[i - 1] = arr[i];
