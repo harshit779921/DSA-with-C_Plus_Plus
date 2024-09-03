@@ -62,7 +62,6 @@ vector<int> moveZeros(int n, vector<int> a)
             break;
         }
     }
-
     // no non-zero elements:
     if (j == -1)
         return a;
