@@ -45,6 +45,7 @@ int getLongestSubarray(vector<int> &a, long long k)
     int left = 0, right = 0; // 2 pointers
     long long sum = a[0];
     int maxLen = 0;
+    
     while (right < n)
     {
         // if sum > k, reduce the subarray from left
