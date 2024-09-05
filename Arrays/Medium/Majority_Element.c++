@@ -7,7 +7,7 @@ using namespace std;
 
 // int majorityElement(vector<int> v) {
 
-//     //size of the given array:
+// size of the given array:
 //     int n = v.size();
 
 //     for (int i = 0; i < n; i++) {
