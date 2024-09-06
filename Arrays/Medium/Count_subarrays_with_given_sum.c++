@@ -98,5 +98,6 @@ int main()
     int k = 6;
     int cnt = findAllSubarraysWithGivenSum(arr, k);
     cout << "The number of subarrays is: " << cnt << "\n";
+    
     return 0;
 }
