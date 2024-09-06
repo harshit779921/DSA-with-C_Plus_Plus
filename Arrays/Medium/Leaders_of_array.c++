@@ -5,7 +5,6 @@ using namespace std;
 
 // vector<int> printLeadersBruteForce(int arr[], int n)
 // {
-
 //     vector<int> ans;
 
 //     for (int i = 0; i < n; i++)
@@ -71,7 +70,6 @@ vector<int> printLeaders(int arr[], int n)
             ans.push_back(arr[i]);
             max = arr[i];
         }
-
     return ans;
 }
 
@@ -84,7 +82,7 @@ int main()
 
     vector<int> ans = printLeaders(arr, n);
 
-    for (int i = ans.size() - 1; i >= 0; i--)
+    for (int i = 0; i < ans.size(); i++)
     {
 
         cout << ans[i] << " ";
