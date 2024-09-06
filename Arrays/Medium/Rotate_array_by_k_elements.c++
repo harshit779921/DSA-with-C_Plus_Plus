@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 
-// Brute force 
+// Brute force
 
 // void Rotatetoright(int arr[], int n, int k)
 // {
@@ -69,6 +69,7 @@ int main()
     int n = 7;
     int k = 2;
     Rotateeleftoright(arr, n, k);
+
     cout << "After Rotating the k elements to right ";
     for (int i = 0; i < n; i++)
         cout << arr[i] << " ";
