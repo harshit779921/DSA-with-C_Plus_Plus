@@ -4,19 +4,15 @@ int main()
 {
     int n;
     cin >> n;
-    int i = 1;
     char start = 'A';
-    while (i <= n)
-    {
-        int j = 1;
 
-        while (j <= i)
+    for (int i = 1; i <= n; i++)
+    {
+        for (int j = 1; j <= i; j++)
         {
             cout << start << " ";
             start = start + 1;
-            j = j + 1;
         }
         cout << endl;
-        i = i + 1;
     }
 }
