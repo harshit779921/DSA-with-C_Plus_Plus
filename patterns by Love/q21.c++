@@ -5,22 +5,20 @@ int main()
     int n;
     cin >> n;
 
-    int i = 1;
-    while (i <= n)
+    for (int i = 1; i <= n; i++)
     {
-        int space = n - i;
-        while (space)
+        // Print spaces
+        for (int space = n - i; space > 0; space--)
         {
             cout << " ";
-            space = space - 1;
         }
-        int j = 1;
-        while (j <= i)
+
+        // Print stars
+        for (int j = 1; j <= i; j++)
         {
             cout << "*";
-            j = j + 1;
         }
+
         cout << endl;
-        i = i + 1;
     }
 }
