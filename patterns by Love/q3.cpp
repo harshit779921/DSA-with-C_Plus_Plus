@@ -4,17 +4,14 @@ int main()
 {
     int n;
     cin >> n;
-    int i = 1;
 
-    while (i <= n)
+    for (int i = 1; i <= n; i++)
     {
-        int j = 1;
-        while (j <= n)
+        for (int j = 1; j <= n; j++)
         {
-            cout <<j; //n-j+1 for revese order
-            j = j + 1;
+            cout << j;
         }
         cout << endl;
-        i = i + 1;
     }
 }
+
