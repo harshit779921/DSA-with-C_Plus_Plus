@@ -6,16 +6,12 @@ int main()
     cin >> n;
     int i = 1;
 
-    while (i <= n)
+    for (int i = 1; i <= n; i++)
     {
-        int j = 1;
-
-        while (j <= n)
+        for (int j = 1; j <= n; j++)
         {
             cout << i + j - 1 << " ";
-            j = j + 1;
         }
         cout << endl;
-        i = i + 1;
     }
 }
