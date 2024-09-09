@@ -6,19 +6,14 @@ int main()
     cin >> n;
     int i = 1;
 
-    while (i <= n)
+    for (int i = 1; i <= n; i++)
     {
-        int j = 1;
         char ch = 'A' + n - i;
-
-        while (j <= i)
+        for (int j = 1; j <= i; j++)
         {
-            
             cout << ch << " ";
             ch = ch + 1;
-            j = j + 1;
         }
         cout << endl;
-        i = i + 1;
     }
 }
