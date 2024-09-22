@@ -5,7 +5,6 @@ using namespace std;
 // Brute Force
 
 // int removeDuplicates(int arr[], int n)
-
 // {
 //     set<int> set;
 //     for (int i = 0; i < n; i++)
@@ -20,7 +19,6 @@ using namespace std;
 //     }
 //     return k;
 // }
-
 // int main()
 // {
 //     int arr[] = {1, 1, 2, 2, 2, 3, 3};
@@ -36,7 +34,6 @@ using namespace std;
 // Optimal Solution
 
 int removeDuplicates(int arr[], int n)
-
 {
     int i = 0;
     for (int j = 1; j < n; j++)
@@ -49,7 +46,6 @@ int removeDuplicates(int arr[], int n)
     }
     return i + 1;
 }
-
 int main()
 {
     int arr[] = {1, 1, 2, 2, 2, 3, 3};
