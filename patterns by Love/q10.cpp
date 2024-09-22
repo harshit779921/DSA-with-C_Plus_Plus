@@ -6,12 +6,18 @@ int main()
 {
     int n;
     cin >> n;
-    for (int i = 1; i <= n; i++)
+    int i = 1;
+
+    while (i <= n)
     {
-        for (int j = 1; j <= 2*i; j++)
+        int j = i;
+
+        while (j < 2 * i)
         {
-            cout << i+j-1<<" ";
+            cout << j << " ";
+            j = j + 1;
         }
         cout << endl;
+        i = i + 1;
     }
 }
