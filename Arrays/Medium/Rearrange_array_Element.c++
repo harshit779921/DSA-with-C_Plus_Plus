@@ -6,7 +6,7 @@ using namespace std;
 // vector<int> RearrangebySign(vector<int> A, int n)
 // {
 
-// Define 2 vectors, one for storing positive
+//     // Define 2 vectors, one for storing positive
 //     // and other for negative elements of the array.
 //     vector<int> pos;
 //     vector<int> neg;
