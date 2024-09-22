@@ -144,7 +144,6 @@ int main()
     int target = 9;
     vector<vector<int>> ans = fourSum(nums, target);
     cout << "The quadruplets are: \n";
-    
     for (auto it : ans) {
         cout << "[";
         for (auto ele : it) {
