@@ -61,35 +61,26 @@ using namespace std;
 // Variation 3
 // The naive approach is basically a combination of variation 1 and variation 2. Here, for every row from 1 to n, we will try to generate all the row elements by simply using the naive approach of variation 2. So, we will use the same code as variation 2(naive approach), inside a loop (i.e. row runs from 1 to n).
 
-#include <bits/stdc++.h>
-using namespace std;
+vector<int> generateRow(int row) {
+    long long ans = 1;
+    vector<int> ansRow;
+    ansRow.push_back(1); //inserting the 1st element
 
-int nCr(int n, int r)
-{
-    long long res = 1;
-
-    // calculating nCr:
-    for (int i = 0; i < r; i++)
-    {
-        res = res * (n - i);
-        res = res / (i + 1);
+    //calculate the rest of the elements:
+    for (int col = 1; col < row; col++) {
+        ans = ans * (row - col);
+        ans = ans / col;
+        ansRow.push_back(ans);
     }
-    return (int)(res);
+    return ansRow;
 }
 
-vector<vector<int>> pascalTriangle(int n)
-{
+vector<vector<int>> pascalTriangle(int n) {
     vector<vector<int>> ans;
 
-    // Store the entire Pascal's triangle:
-    for (int row = 1; row <= n; row++)
-    {
-        vector<int> tempLst; // temporary list
-        for (int col = 1; col <= row; col++)
-        {
-            tempLst.push_back(nCr(row - 1, col - 1));
-        }
-        ans.push_back(tempLst);
+    //store the entire pascal's triangle:
+    for (int row = 1; row <= n; row++) {
+        ans.push_back(generateRow(row));
     }
     return ans;
 }
@@ -98,13 +89,11 @@ int main()
 {
     int n = 5;
     vector<vector<int>> ans = pascalTriangle(n);
-    for (auto it : ans)
-    {
-        for (auto ele : it)
-        {
+    for (auto it : ans) {
+        for (auto ele : it) {
             cout << ele << " ";
         }
-        cout << "\n"; // Corrected: \n for a new line
+        cout << endl;
     }
     return 0;
 }
