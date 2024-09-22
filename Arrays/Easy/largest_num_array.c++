@@ -1,30 +1,31 @@
-
-#include <bits/stdc++.h>
-
+#include <iostream>
 using namespace std;
-int findLargestElement(int arr[], int n)
-{
 
-    int max = arr[0];
-    for (int i = 0; i < n; i++)
+int largestElement(int n, int arr[])
+{
+    int largest = arr[0];
+    for (int i = 1; i < n; i++)
     {
-        if (max < arr[i])
+        if (arr[i] > largest)
         {
-            max = arr[i];
+            largest = arr[i];
         }
     }
-    return max;
+    return largest;
 }
+
 int main()
 {
-    int arr1[] = {2, 5, 1, 3, 0};
-    int n = 5;
-    int max = findLargestElement(arr1, n);
-    cout << "The largest element in the array is: " << max << endl;
+    int n;
+    cout << "Enter the number of elements: ";
+    cin >> n;
+    int arr[n];
+    cout << "Enter the elements: ";
+    for (int i = 0; i < n; i++)
+        cin >> arr[i];
 
-    int arr2[] = {8, 10, 5, 7, 9};
-    n = 5;
-    max = findLargestElement(arr2, n);
-    cout << "The largest element in the array is: " << max << endl;
+    int largest = largestElement(n, arr);
+    cout << "The largest element is: " << largest << endl;
+
     return 0;
 }
