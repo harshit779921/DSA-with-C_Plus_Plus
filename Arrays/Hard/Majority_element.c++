@@ -6,6 +6,7 @@ using namespace std;
 // vector<int> majorityElement(vector<int> v) {
 //     int n = v.size(); //size of the array
 //     vector<int> ls; // list of answers
+
 //     for (int i = 0; i < n; i++) {
 //         //selected element is v[i]:
 //         // Checking if v[i] is not already
