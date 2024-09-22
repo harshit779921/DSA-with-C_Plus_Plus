@@ -4,16 +4,18 @@ int main()
 {
     int n;
     cin >> n;
+    int i = 1;
     int count = 1;
-
-    for (int i = 1; i <= n; i++)
+    while (i <= n)
     {
-        for (int j = 1; j <= i; j++)
+        int j = 1;
+        while (j <= i)
         {
-            cout << count ;
-            count = count+1;
+            cout << count << " ";
+            j = j + 1;
+            count = count + 1;
         }
         cout << endl;
+        i = i + 1;
     }
 }
-    
