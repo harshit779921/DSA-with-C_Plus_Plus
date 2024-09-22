@@ -5,24 +5,28 @@ int main()
     int n;
     cin >> n;
 
-    for (int i = 1; i <= n; i++)
+    int i = 1;
+    while (i <= n)
     {
-        // Print spaces
-        for (int space = n - i; space > 0; space--)
+        int space = n - i;
+        while (space)
         {
             cout << " ";
+            space = space - 1;
         }
-
-        for (int j = 1; j <= i; j++)
+        int j = 1;
+        while (j <= i)
         {
             cout << j;
+            j = j + 1;
         }
-
-        for (int k = i - 1; k > 0; k--)
+        int k = i - 1;
+        while (k)
         {
             cout << k;
+            k = k - 1;
         }
-
         cout << endl;
+        i = i + 1;
     }
 }
