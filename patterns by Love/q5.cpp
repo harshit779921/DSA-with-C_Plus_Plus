@@ -10,7 +10,7 @@ int main()
     {
         for (int j = 1; j <= n; j++)
         {
-            cout << count<<" ";
+            cout << count;
             count = count +1;
         }
         cout << endl;
