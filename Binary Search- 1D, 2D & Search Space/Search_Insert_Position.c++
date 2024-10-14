@@ -29,6 +29,7 @@ int main()
 {
     vector<int> arr = {1, 2, 4, 7};
     int x = 6;
+    
     int ind = searchInsert(arr, x);
     cout << "The index is: " << ind << "\n";
     return 0;
