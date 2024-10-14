@@ -26,6 +26,7 @@ int main()
     vector<int> a = {3, 4, 6, 7, 9, 12, 16, 17};
     int target = 6;
     int ind = search(a, target);
+    
     if (ind == -1)
         cout << "The target is not present." << endl;
     else
