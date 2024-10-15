@@ -36,6 +36,5 @@ int main()
 
     // returning the last occurrence index if the element is present otherwise -1
     cout << solve(n, key, v) << "\n";
-
     return 0;
 }
