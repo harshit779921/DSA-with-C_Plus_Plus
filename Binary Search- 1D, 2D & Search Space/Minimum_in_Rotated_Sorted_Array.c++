@@ -35,6 +35,7 @@ int main()
 {
     vector<int> arr = {4, 5, 6, 7, 0, 1, 2, 3};
     int ans = findMin(arr);
+    
     cout << "The minimum element is: " << ans << "\n";
     return 0;
 }
